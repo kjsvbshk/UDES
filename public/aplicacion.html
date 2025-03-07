@@ -8,6 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        /* Estilos adicionales para el submenú desplegable */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
 <body class="font-sans bg-gray-100">
     <!-- Navbar -->
@@ -15,9 +22,17 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex space-x-6">
                 <a href="/" class="text-white font-semibold text-lg hover:text-blue-300">Inicio</a>
-                <a href="/modelosRED" class="text-white hover:text-blue-300">Modelos de Evaluación</a>
+                
+                <!-- Submenú desplegable para "Modelos de Evaluación" -->
+                <div class="relative dropdown">
+                    <a class="text-white hover:text-blue-300">Modelos de Evaluación</a>
+                    <div class="dropdown-menu absolute hidden bg-blue-800 mt-2 py-2 w-48 rounded-lg shadow-lg">
+                        <a href="/modelosRED" class="block px-4 py-2 text-white hover:bg-blue-700">Modelos de Evaluación</a>
+                        <a href="/aplicacion" class="block px-4 py-2 text-white hover:bg-blue-700">Aplicación de Modelo</a>
+                    </div>
+                </div>
+
                 <a href="/rediseno" class="text-white hover:text-blue-300">Rediseño</a>
-                <a href="/aplicacion" class="text-white hover:text-blue-300">Aplicación de Modelo</a>
                 <a href="/referencias" class="text-white hover:text-blue-300">Referencias</a>
             </div>
         </div>
