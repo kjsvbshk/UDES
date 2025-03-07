@@ -25,7 +25,7 @@
                 
                 <!-- Submenú desplegable para "Modelos de Evaluación" -->
                 <div class="relative dropdown">
-                    <a class="text-white hover:text-blue-300">Modelos de Evaluación</a>
+                    <a class="text-white hover:not-focus-blue-300 cursor-pointer">Recursos Educativos Digitales</a>
                     <div class="dropdown-menu absolute hidden bg-blue-800 mt-2 py-2 w-48 rounded-lg shadow-lg">
                         <a href="/modelosRED" class="block px-4 py-2 text-white hover:bg-blue-700">Modelos de Evaluación</a>
                         <a href="/aplicacion" class="block px-4 py-2 text-white hover:bg-blue-700">Aplicación de Modelo</a>
@@ -48,11 +48,163 @@
             </div>
         </div>
     </header>
-        <!-- Sección: Modelos de Evaluación -->
-    <section id="modelos" class="bg-blue-100 py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-blue-800 mb-6">Modelos de Evaluación</h2>
-            <p class="text-gray-700">Descripción de los modelos de evaluación utilizados en el proyecto.</p>
+    <!-- Sección: Seleccionando Modelos -->
+    <section id="seleccionando-modelos" class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-gray-700 mb-8">Seleccionando Modelos</h2>
+        <div class="space-y-8">
+            <!-- Modelo 1: PIC-RAT -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4">Modelo PIC-RAT</h3>
+                <p class="text-gray-700 mb-4">
+                    Este es un modelo de integración que está pensado para la formación docente y facilitar el análisis de las prácticas educativas, ayudando a reflexionar sobre la integración de tecnología en el aula. Este modelo atiende a dos criterios, uno sobre el rol del alumno (PIC) y otro sobre el impacto en la práctica con el docente (RAT).
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Relación del estudiante con la tecnología (PIC)</strong>
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>Pasivo (P):</strong> Consiste en que el estudiante reciba información sin interacción activa, como escuchar una clase donde el docente usa una presentación tipo PowerPoint o ver un video de YouTube en clase.</li>
+                    <li><strong>Interactivo (I):</strong> El estudiante participa más activamente mediante respuestas o colaboración con otros compañeros. Por ejemplo, interactuar directamente con la tecnología implementada, tomando decisiones de clase o resolviendo problemas.</li>
+                    <li><strong>Creativo (C):</strong> Los estudiantes usan las herramientas para crear contenido nuevo y original que representen evidencias de su aprendizaje.</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    <strong>Impacto de la tecnología en la práctica del docente (RAT)</strong>
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>Reemplazo (R):</strong> Consiste en sustituir las herramientas tradicionales sin hacer cambios significativos en la práctica pedagógica.</li>
+                    <li><strong>Amplificación (A):</strong> Este punto representa el uso de la tecnología para mejorar los resultados del aprendizaje sin modificar la pedagogía del docente.</li>
+                    <li><strong>Transformación (T):</strong> Es la capacidad que tiene el uso de las herramientas tecnológicas para modificar la pedagogía del docente, de una forma innovadora que antes no era posible.</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    La combinación de estos dos modelos genera una matriz de nueve celdas que ayuda a los docentes a evaluar y planificar la integración efectiva de la tecnología en sus clases.
+                </p>
+
+                
+                <div class="my-8 flex justify-center">
+                    <img src="./assets/images/matriz_pic-rat.png" alt="Matriz PIC-RAT" class="w-full max-w-md h-auto ">
+                </div>
+
+                <p class="text-gray-700 mb-4">
+                    <strong>Criterios de evaluación</strong>
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>Relación del estudiante con la tecnología (PIC):</strong> Evaluar si la interacción del estudiante es pasiva, interactiva o creativa.</li>
+                    <li><strong>Impacto de la tecnología en la práctica docente (RAT):</strong> Determinar si la tecnología está siendo utilizada para reemplazar, amplificar o transformar las prácticas docentes.</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    <strong>Métricas o escalas de valoración:</strong> Se clasifican las actividades en el aula dentro de una matriz PIC-RAT con nueve categorías, esto permite medir el nivel de integración que tiene una nueva tecnología usada y su impacto en el aprendizaje.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Metodología:</strong> Analizar las actividades realizadas en el aula de clase para ubicarlas en la matriz PIC-RAT, y facilitar la reflexión sobre cómo se está integrando la tecnología y cómo podría mejorarse su uso.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Instrumentos de evaluación:</strong> Guía de observación o rúbrica basada en la información de la matriz PIC-RAT, que permite a los docentes autoevaluar y planificar la integración de herramientas tecnológicas en sus clases.
+                </p>
+
+                <!-- Referencias -->
+                <div class="mt-8">
+                    <h4 class="text-xl font-bold text-gray-700 mb-4">Referencias</h4>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Kimmons, R., Graham, C. & West, R. (2020). <em><a href="https://citejournal.org/volume-20/issue-1-20/general/the-picrat-model-for-technology-integration-in-teacher-preparation/" class="text-blue-600 hover:underline">PICRAT Model for Technology Integration in Teacher Preparation</a></em>. Universidad Brigham Young.</li>
+                        <li>Kimmons, R., & West, R. (n.d.). <em><a href="https://www.youtube.com/watch?v=bfvuG620Bto" class="text-blue-600 hover:underline">PICRAT for effective technology integration in teaching</a></em>. YouTube.</li>
+                        <li>Kimmons, R., Draper D.E. & Backman. J. (n.d.). <em><a href="https://edtechbooks.org/encyclopedia/picrat" class="text-blue-600 hover:underline">The PICRAT Technology Integration Model</a></em>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modelo 2: SAMR -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4">Modelo SAMR</h3>
+                <p class="text-gray-700 mb-4">
+                    Este modelo, desarrollado por el Doctor Rubén Puentedura, consiste en un marco que guía a los docentes en la integración efectiva de la tecnología en sus clases. Este acrónimo representa los cuatro niveles de integración tecnológica:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>Sustitución:</strong> Se usa la tecnología como reemplazo de otro elemento existente, por ejemplo, realizar un mapa mental usando un software.</li>
+                    <li><strong>Aumento:</strong> La tecnología se usa como un sustituto de otro sistema existente, mejorando significativamente la forma de realizar las tareas sin modificar la metodología. Un ejemplo es realizar la búsqueda de información a través de internet.</li>
+                    <li><strong>Modificación:</strong> Mediante el uso de tecnologías, se realiza una mejora metodológica basada en TIC. Por ejemplo, al necesitar hacer un resumen sobre una actividad, el estudiante puede crear un video (YouTube) y compartir comentarios con sus compañeros para debatir puntos clave.</li>
+                    <li><strong>Redefinición:</strong> Se generan nuevos ambientes de aprendizaje que ayudan a mejorar la calidad educativa.</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    Este modelo también se estructura en dos capas: <strong>Mejora</strong> (Sustitución y Aumento) y <strong>Transformación</strong> (Modificación y Redefinición), lo que permite tener una escala para evaluar y planificar el uso de las tecnologías en clase.
+                </p>
+
+                <div class="my-8 flex justify-center">
+                    <img src="./assets/images/SAMR.png" alt="Modelo SAMR" class="w-full max-w-md h-auto">
+                </div>
+
+                <p class="text-gray-700 mb-4">
+                    <strong>Criterios de evaluación</strong>
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>Nivel de integración con la tecnología:</strong> Determinar en cuál de los cuatro niveles (Sustitución, Aumento, Modificación, Redefinición) se encuentra la actividad que se quiere realizar.</li>
+                    <li><strong>Impacto en el aprendizaje:</strong> Evaluar cómo la tecnología usada afecta la experiencia y los resultados de aprendizaje en los estudiantes.</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    <strong>Métrica o escala de valoración:</strong> Se clasifican las actividades realizadas según los cuatro niveles del SAMR, para identificar el grado de integración de la tecnología usada y su potencial para transformar el proceso de enseñanza-aprendizaje.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Metodología:</strong> Análisis y conclusiones sobre las actividades académicas para ubicarlas correctamente en la escala del modelo SAMR.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Instrumento de evaluación:</strong> Rúbricas o guías de observación basados en el modelo que permiten al docente autoevaluar y diseñar estrategias para una integración efectiva del modelo en sus prácticas pedagógicas.
+                </p>
+
+                <!-- Referencias -->
+                <div class="mt-8">
+                    <h4 class="text-xl font-bold text-gray-700 mb-4">Referencias</h4>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Puentedura, R. R. (2013). <em><a href="https://formacion.intef.es/tutorizados_2013_2019/pluginfile.php/213603/mod_imscp/content/6/modelo_samr.html" class="text-blue-600 hover:underline"> The SAMR Model: Background and Exemplars</a></em>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modelo 3: Kirkpatrick -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4">Modelo de Kirkpatrick</h3>
+                <p class="text-gray-700 mb-4">
+                    Este modelo permite evaluar la eficacia de los programas de capacitación y aprendizaje. Fue propuesto por Donald Kirkpatrick en 1959 y se compone de cuatro niveles de evaluación fundamentales:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>Reacción:</strong> Mide qué tan satisfechos están los participantes con la capacitación recibida.</li>
+                    <li><strong>Aprendizaje:</strong> Evalúa el grado en que los participantes adquirieron los conocimientos, habilidades y actitudes previstos.</li>
+                    <li><strong>Comportamiento:</strong> Analiza la aplicación de lo aprendido en el entorno laboral o educativo.</li>
+                    <li><strong>Resultados:</strong> Determina si el impacto final de la capacitación trae mejoras en la productividad o en los resultados académicos.</li>
+                </ul>
+
+                <!-- Espacio para insertar una imagen (centrada) -->
+                <div class="my-8 flex justify-center">
+                    <img src="./assets/images/kirkpatrick-model.png" alt="Modelo de Kirkpatrick" class="w-150 h-150">
+                </div>
+
+                <p class="text-gray-700 mb-4">
+                    <strong>Criterios de evaluación:</strong>
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li><strong>Nivel 1 (Reacción):</strong> Satisfacción y percepción de los participantes sobre la capacitación.</li>
+                    <li><strong>Nivel 2 (Aprendizaje):</strong> Adquisición de conocimientos, habilidades y actitudes.</li>
+                    <li><strong>Nivel 3 (Comportamiento):</strong> Aplicación práctica de lo aprendido en un entorno real.</li>
+                    <li><strong>Nivel 4 (Resultados):</strong> Impacto tangible de la capacitación en el contexto implementado.</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    <strong>Métrica o escala de valoración:</strong> Cada uno de los niveles del modelo utiliza métricas específicas, como encuestas, pruebas, observaciones de desempeño y análisis de indicadores clave en el rendimiento para evaluar la eficacia de la capacitación.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Metodología:</strong> Se usan instrumentos de evaluación en cada uno de los cuatro niveles para recopilar datos cuantitativos y cualitativos que permiten analizar la eficacia de los programas de formación y el impacto en los objetivos de la organización o de los estudiantes.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Instrumentos de evaluación:</strong> Encuestas, pruebas de conocimiento, evaluaciones de desempeño, indicadores de resultados, etc.
+                </p>
+
+                <!-- Referencias -->
+                <div class="mt-8">
+                    <h4 class="text-xl font-bold text-gray-700 mb-4">Referencias</h4>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Lucidchart. (s.f.). <em><a href="https://www.lucidchart.com/blog/es/como-usar-el-modelo-de-evaluacion-kirkpatrick" class="text-blue-600 hover:underline">Definición y uso del modelo de evaluación Kirkpatrick</a></em>.</li>
+                        <li>Kirkpatrick Partners. (2023). <em><a href="https://www.kirkpatrickpartners.com/the-kirkpatrick-model/" class="text-blue-600 hover:underline">The Kirkpatrick Model</a></em>.</li>
+                        <li>Kirkpatrick, D. L., & Kirkpatrick, J. D. (2006). <em><a href="#" class="text-blue-600 hover:underline"> Evaluating Training Programs: The Four Levels</a></em>. Berrett-Koehler Publishers.</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
     
