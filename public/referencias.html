@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
-        /* Estilos adicionales para el submenú desplegable */
         .dropdown:hover .dropdown-menu {
             display: block;
         }
@@ -18,28 +17,18 @@
 </head>
 
 <body class="font-sans bg-gray-100">
-    <!-- Navbar -->
     <nav class="bg-blue-800 shadow fixed w-full top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex space-x-6">
                 <a href="/" class="text-white font-semibold text-lg hover:text-blue-300">Inicio</a>
-                
-                <!-- Submenú desplegable para "Modelos de Evaluación" -->
-                <div class="relative dropdown">
-                    <a href="/evalYred" class="text-white hover:not-focus-blue-300 cursor-pointer">Modelos de Evaluación y RED</a>
-                    <div class="dropdown-menu absolute hidden bg-blue-800 mt-2 py-2 w-48 rounded-lg shadow-lg">
-                        <a href="/modelosRED" class="block px-4 py-2 text-white hover:bg-blue-700">Recursos Educativos Digitales</a>
-                        <a href="/aplicacion" class="block px-4 py-2 text-white hover:bg-blue-700">Seleccionando Modelos</a>
-                    </div>
-                </div>
-                <a href="/aplicacionmodelos" class="text-white hover:text-blue-300">Aplicación de modelo de evaluación</a> 
+                <a href="/evalYred" class="text-white hover:not-focus-blue-300 cursor-pointer">Modelos de Evaluación y RED</a>
+                <a href="/aplicacionmodelos" class="text-white hover:text-blue-300">Aplicación de modelo de evaluación</a>
                 <a href="/rediseno" class="text-white hover:text-blue-300">Rediseño</a>
                 <a href="/referencias" class="text-white hover:text-blue-300">Referencias</a>
             </div>
         </div>
     </nav>
 
-    <!-- Banner -->
     <header class="relative mt-16">
         <div class="w-full h-96 overflow-hidden">
             <img src="./assets/images/referencias.jpg" alt="Banner" class="w-full h-96 object-cover">
@@ -47,58 +36,30 @@
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold text-white">Referencias</h1>
-                <p class="text-lg md:text-xl text-white mt-4">Conectando soluciones innovadoras para mejorar la educación en la aulas.</p>
+                <p class="text-lg md:text-xl text-white mt-4">Conectando soluciones innovadoras para mejorar la educación en las aulas.</p>
             </div>
         </div>
     </header>
 
-    <!-- Sección: Referencias -->
     <section id="referencias" class="bg-gray-50 py-16">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-700 mb-8">Referencias</h2>
             <div class="space-y-8">
-                <!-- Referencias de Khan Academy -->
-                <div >
-                    <h3 class="text-2xl font-bold text-gray-700 mb-4">Khan Academy</h3>
-                    <ul class="list-disc list-inside text-gray-700">
-                        <li class="mb-2">
-                            Aguirre, R. (2024). <em>Khan Academy y su incidencia en las habilidades de resolución de problemas matemáticos</em>. Revista Dominio de las Ciencias, 10(2), 821-848. 
-                            <a href="https://www.researchgate.net/publication/380765786_Khan_Academy_y_su_incidencia_en_las_habilidades_de_resolucion_de_problemas_matematicos" class="text-pretty text-blue-600 hover:underline after:content-['_↗']">https://www.researchgate.net/publication/380765786_Khan_Academy_y_su_incidencia_en_las_habilidades_de_resolucion_de_problemas_matematicos</a>
-                        </li>
-                        <li class="mb-2">
-                            Universidad Autónoma de Bucaramanga. (s.f.). <em>Khan Academy: una estrategia innovadora para mejorar la calidad en la educación superior a través del rendimiento académico de los estudiantes</em>. 
-                            <a href="https://apolo.unab.edu.co/en/publications/khan-academy-una-estrategia-innovadora-para-mejorar-la-calidad-en" class="text-blue-600 hover:underline after:content-['_↗']">https://apolo.unab.edu.co/en/publications/khan-academy-una-estrategia-innovadora-para-mejorar-la-calidad-en</a>
-                        </li>
-                        <li class="mb-2">
-                            Khan Academy. (s.f.). <em>¿Cómo es que Khan Academy es efectivo y diferente a otros recursos?</em> 
-                            <a href="https://support.khanacademy.org/hc/es/articles/202260264--C%C3%B3mo-es-que-Khan-Academy-es-efectivo-y-diferente-a-otros-recursos" class="text-blue-600 hover:underline after:content-['_↗']">https://support.khanacademy.org/hc/es/articles/202260264--C%C3%B3mo-es-que-Khan-Academy-es-efectivo-y-diferente-a-otros-recursos</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Referencias de PhET Interactive Simulations -->
-                <div >
-                    <h3 class="text-2xl font-bold text-gray-700 mb-4">PhET Interactive Simulations</h3>
-                    <ul class="list-disc list-inside text-gray-700">
-                        <li class="mb-2">
-                            Wieman, C. E., Adams, W. K., y Perkins, K. K. (2008). <em>PhET: Simulaciones interactivas para la enseñanza y el aprendizaje de la física</em>. Revista de Educación Física y Tecnología, 47(3), 18-23. 
-                            <a href="https://www.researchgate.net/publication/241167894_PhET_Interactive_Simulations_for_Teaching_and_Learning_Physics" class="text-blue-600 hover:underline after:content-['_↗']">https://www.researchgate.net/publication/241167894_PhET_Interactive_Simulations_for_Teaching_and_Learning_Physics</a>
-                        </li>
-                        <li class="mb-2">
-                            PhET Interactive Simulations. (s.f.). <em>Investigación</em>. Universidad de Colorado Boulder. 
-                            <a href="https://phet.colorado.edu/en/research" class="text-blue-600 hover:underline after:content-['_↗']">https://phet.colorado.edu/en/research</a>
-                        </li>
-                        <li class="mb-2">
-                            PhET Interactive Simulations. (s.f.). <em>Acerca de PhET</em>. Universidad de Colorado Boulder. 
-                            <a href="https://phet.colorado.edu/en/about" class="text-blue-600 hover:underline after:content-['_↗']">https://phet.colorado.edu/en/about</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Adame, S. (2015). <em>Instrumento para evaluar recursos educativos digitales, LORI-AD</em>. <a href="https://www.researchgate.net/publication/281670043_Instrumento_para_evaluar_Recursos_Educativos_Digitales_LORI_-_AD" class="text-blue-600 hover:underline after:content-['_↗']">ResearchGate</a></li>
+                    <li>Asociación Española de Normalización (AENOR). (2017). <em>UNE 71362:2017. Calidad de los materiales educativos digitales</em>. <a href="https://intef.es/wp-content/uploads/2020/01/AnexoF_UNE_713622017.pdf" class="text-blue-600 hover:underline after:content-['_↗']">INTEF</a></li>
+                    <li>Dájer. (2021). <em>Plantilla modelo LORI</em>. Universidad de Santander (UDES).</li>
+                    <li>Fernández Pampillón, A., Domínguez Romero, E., & De Armas Ranero, I. (2012). <em>Herramienta de evaluación de la calidad de objetos de aprendizaje (herramienta COdA)</em>. <a href="https://hdl.handle.net/20.500.14352/48984" class="text-blue-600 hover:underline after:content-['_↗']">Universidad Complutense de Madrid</a></li>
+                    <li>Fernández-Pampillón, A. M. <em>UNE 71362: calidad de los materiales educativos digitales</em>. <a href="https://hdl.handle.net/20.500.14352/18173" class="text-blue-600 hover:underline after:content-['_↗']">Asociación Española de Normalización</a></li>
+                    <li>Kimmons, R., & West, R. (s.f). <em>PICRAT for effective technology integration in teaching</em>. YouTube.</li>
+                    <li>Kimmons, R., Draper, D., & Backman, J. (2022). <em>PICRAT: The PICRAT Technology Integration Model</em>. <a href="https://doi.org/10.59668/371.5895" class="text-blue-600 hover:underline after:content-['_↗']">EdTechnica</a></li>
+                    <li>Kimmons, R., Graham, C. R., & West, R. E. (2020). <em>The PICRAT model for technology integration in teacher preparation</em>. <a href="https://citejournal.org/volume-20/issue-1-20/general/the-picrat-model-for-technology-integration-in-teacher-preparation" class="text-blue-600 hover:underline after:content-['_↗']">CITE Journal</a></li>
+                    <li>Moreno, J., Bolaños, L., & Navia, M. (2010). <em>Exploración de Modelos y Estándares de Calidad Para el Producto Software</em>. <a href="https://www.redalyc.org/pdf/5537/553756877003.pdf" class="text-blue-600 hover:underline after:content-['_↗']">Revista UIS Ingenierías</a></li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-blue-800 text-white py-8">
         <div class="container mx-auto px-6 text-center">
             <div class="flex justify-center space-x-6 mb-4">
@@ -111,5 +72,4 @@
         </div>
     </footer>
 </body>
-
 </html>
